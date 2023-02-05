@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "http-server -p 8078 -c-1 --cors",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "mkdir dist; cp favicon.ico ./dist && cp index.* ./dist"
   },
   "author": "Daniel Graham",
   "license": "ISC",
