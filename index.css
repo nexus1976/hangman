@@ -1,0 +1,56 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.hm-gameboard {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+
+.hm-left-half {
+    height: 100%;
+    max-width: 425px;
+    min-height: 425px;
+}
+
+.hm-right-half {
+    height: 100%;
+    width: 75%;
+    max-width: 75%;
+}
+.hm-right-half button {
+    background-color: lightgray;
+    width: 40px;
+    height: 40px;
+    font-size: large;
+}
+
+.hm-gameboard-span {
+    display: flex;
+}
+
+.hm-letters-middlerow {
+    padding-left: 20px;
+}
+
+.hm-letters-bottomrow {
+    padding-left: 60px;
+}
+
+.hm-word {
+    padding-top: 5px;
+}
+
+.hm-letter-placeholder {
+    width: 40px;
+    height: 40px;
+    font-size: large;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin-right: 10px;
+    text-align: center;
+}

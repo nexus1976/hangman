@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hangman!</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+		<link href="index.css" rel="stylesheet" />
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div>
+            <span>
+                <button id="btnNewGame" onclick="startNewGame()">New Game</button>
+                <label id="lblMessage"></label>
+            </span>
+            <div class="hm-gameboard">
+                <span class="hm-gameboard-span">
+                    <div class="hm-left-half">
+                        <canvas id="hm-canvas-man" width="400px" height="300px">
+                            Your browser does not support HTML5 Canvas element
+                        </canvas>
+                    </div>
+                    <div class="hm-right-half">
+                        <div class="hm-letters-toprow">
+                            <button id="btnQ" onclick="letterClick('Q')">Q</button>
+                            <button id="btnW" onclick="letterClick('W')">W</button>
+                            <button id="btnE" onclick="letterClick('E')">E</button>
+                            <button id="btnR" onclick="letterClick('R')">R</button>
+                            <button id="btnT" onclick="letterClick('T')">T</button>
+                            <button id="btnY" onclick="letterClick('Y')">Y</button>
+                            <button id="btnU" onclick="letterClick('U')">U</button>
+                            <button id="btnI" onclick="letterClick('I')">I</button>
+                            <button id="btnO" onclick="letterClick('O')">O</button>
+                            <button id="btnP" onclick="letterClick('P')">P</button>
+                        </div>
+                        <div class="hm-letters-middlerow">
+                            <button id="btnA" onclick="letterClick('A')">A</button>
+                            <button id="btnS" onclick="letterClick('S')">S</button>
+                            <button id="btnD" onclick="letterClick('D')">D</button>
+                            <button id="btnF" onclick="letterClick('F')">F</button>
+                            <button id="btnG" onclick="letterClick('G')">G</button>
+                            <button id="btnH" onclick="letterClick('H')">H</button>
+                            <button id="btnJ" onclick="letterClick('J')">J</button>
+                            <button id="btnK" onclick="letterClick('K')">K</button>
+                            <button id="btnL" onclick="letterClick('L')">L</button>
+                        </div>
+                        <div class="hm-letters-bottomrow">
+                            <button id="btnZ" onclick="letterClick('Z')">Z</button>
+                            <button id="btnX" onclick="letterClick('X')">X</button>
+                            <button id="btnC" onclick="letterClick('C')">C</button>
+                            <button id="btnV" onclick="letterClick('V')">V</button>
+                            <button id="btnB" onclick="letterClick('B')">B</button>
+                            <button id="btnN" onclick="letterClick('N')">N</button>
+                            <button id="btnM" onclick="letterClick('M')">M</button>
+                        </div>
+                        <div id="hm-word">
+
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </body>
+</html>
